@@ -2,7 +2,7 @@ const { default: mongoose } = require('mongoose');
 const monogoose = require('mongoose');
 
 const esquema = new mongoose.Schema({
-    name: String,
+    title: String,
     description: String,
     elaboration: [String],
     ingredients: [String],

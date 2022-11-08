@@ -7,7 +7,7 @@ const recipe = require('../models/receta');
 router.post('/', function (req, res) {
     let r = new recipe(
         {
-            name: req.body.name,
+            title: req.body.name,
             description: req.body.description,
             elaboration: req.body.elaboration,
             ingredients: req.body.ingredients,
@@ -61,7 +61,7 @@ router.put('/:id', function (req, res){
             _id: req.params.id
         },
         {
-            name: req.body.name,
+            title: req.body.name,
             description: req.body.description,
             elaboration: req.body.elaboration,
             ingredients: req.body.ingredients,
